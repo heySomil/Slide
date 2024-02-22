@@ -50,7 +50,7 @@ const SignupForm = () => {
       password: values.password,
     })
     if(!session){
-      return toast({title: 'Sign in failed. Please try again.'})
+      return toast({title: 'Sign up failed. Please try again.'})
     }
 
     const isLoggedIn = await checkAuthUser();
@@ -71,13 +71,13 @@ const SignupForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/Logo.png" alt="logo" className="w-32"/>
+        <img src="/assets/Logo.png" alt="logo" className="w-32"/>
 
         <h2 className="h3-bold -mt-6 md:h2-bold pt-5 sm:pt-12">
           Create a new account
         </h2>
         <p className="text-light-3 small-medium md:base-regular mt-2">
-          To use snapgram, Please enter your details
+          To use Slide, Please enter your details
         </p>
 
         <form

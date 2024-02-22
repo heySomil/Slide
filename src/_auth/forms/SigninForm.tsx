@@ -63,7 +63,7 @@ const SigninForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/Logo.png" alt="logo" className="w-32" />
+        <img src="/assets/Logo.png" alt="logo" className="w-32" />
 
         <h2 className="h3-bold -mt-6 md:h2-bold pt-5 sm:pt-12">
           Login to Slide
@@ -110,7 +110,7 @@ const SigninForm = () => {
                 <Loader /> Loading...
               </div>
             ) : (
-              "Sign Up"
+              "Sign In"
             )}
           </Button>
 
